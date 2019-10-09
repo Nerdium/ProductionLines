@@ -1,5 +1,15 @@
 package entities;
 
 public abstract class Entity {
-	public abstract void update(); 
+	private String id;
+	
+	public Entity(String id) {
+		this.id = id;
+	}
+	
+	public abstract void update();
+	
+	public String getId() {
+		return this.id;
+	}
 }

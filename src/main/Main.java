@@ -1,9 +1,12 @@
 package main;
 
+import entities.buildings.mines.StoneQuarry;
+
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Hello World!");
+		StoneQuarry sq = new StoneQuarry("Test");
+		System.out.println(sq.getId());
 	}
 
 }
