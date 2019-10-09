@@ -1,11 +1,11 @@
 package entities.buildings.mines;
 
-import entities.EntityID;
+import config.EntityID;
 
 public class StoneQuarry extends Mine {
 
 	public StoneQuarry(String id) {
-		super(EntityID.stoneQuarry + id);
+		super(EntityID.stoneQuarry + id, 3, 3);
 	}
 
 	@Override
