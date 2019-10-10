@@ -3,7 +3,7 @@ package engine;
 import java.util.ArrayList;
 import entities.Entity;
 
-public class EntityManager {
+public class EntityController {
 	private ArrayList<Entity> entities = new ArrayList<Entity>();
 	
 	public void addEntity(Entity entity) {
