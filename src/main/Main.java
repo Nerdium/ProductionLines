@@ -11,7 +11,7 @@ public class Main {
 		
 		map.generateMap();
 		map.placeEntity(sq.getId(), 0, 0, 3, 3);
-		System.out.println("Test: \"" + map.idAtPos(2, 2) + "\"");
+		System.out.println("Test: \"" + map.buildingAtPos(2, 2) + "\"");
 		
 	}
 
