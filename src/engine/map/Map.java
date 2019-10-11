@@ -1,4 +1,4 @@
-package engine.map.terrain;
+package engine.map;
 
 public class Map {
 

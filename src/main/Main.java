@@ -1,7 +1,7 @@
 package main;
 
 import engine.entities.buildings.mines.StoneQuarry;
-import engine.map.terrain.Map;
+import engine.map.Map;
 
 public class Main {
 
