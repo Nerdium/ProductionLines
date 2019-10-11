@@ -5,10 +5,12 @@ import engine.map.terrain.Terrain;
 
 public abstract class Deposit extends Terrain {
 	protected ResourceType resourceType;
+	private int resourcesLeft;
 	
-	public Deposit(String id) {
+	public Deposit(String id, int resourcesLeft) {
 		super(id);
 		this.isResource = true;
+		this.resourcesLeft = resourcesLeft;
 	}
 	
 	@Override
@@ -16,4 +18,7 @@ public abstract class Deposit extends Terrain {
 		return true;
 	}
 	
+	public int getResourcesLeft() {	
+		return this.resourcesLeft;
+	}
 }

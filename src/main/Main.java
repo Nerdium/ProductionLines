@@ -1,5 +1,6 @@
 package main;
 
+import engine.entities.buildings.mines.ResourceType;
 import engine.entities.buildings.mines.StoneQuarry;
 import engine.map.Map;
 
@@ -10,8 +11,8 @@ public class Main {
 		Map map = new Map();
 		
 		map.generateMap();
-		map.placeBuilding(sq.getId(), 0, 0, sq.getSizeX(), sq.getSizeY());
-		System.out.println("Test: \"" + map.buildingAtPos(2, 2) + "\"");
+		System.out.println(map.placeMine(sq, 0, 0, sq.getResource()));
+		//System.out.println("Test: \"" + map.buildingAtPos(2, 2) + "\"");
 		
 	}
 
