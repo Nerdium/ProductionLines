@@ -1,7 +1,7 @@
 package main;
 
-import engine.map.Map;
-import entities.buildings.mines.StoneQuarry;
+import engine.entities.buildings.mines.StoneQuarry;
+import engine.map.terrain.Map;
 
 public class Main {
 
@@ -10,7 +10,6 @@ public class Main {
 		Map map = new Map();
 		
 		map.generateMap();
-		map.placeEntity(sq.getId(), 0, 0, 3, 3);
 		System.out.println("Test: \"" + map.buildingAtPos(2, 2) + "\"");
 		
 	}

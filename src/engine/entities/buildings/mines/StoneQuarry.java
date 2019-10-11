@@ -1,4 +1,4 @@
-package entities.buildings.mines;
+package engine.entities.buildings.mines;
 
 import config.EntityID;
 
@@ -10,6 +10,12 @@ public class StoneQuarry extends Mine {
 
 	@Override
 	public void update() {
+		
+	}
+
+	@Override
+	public void build() {
+		
 		
 	}
 

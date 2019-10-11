@@ -1,6 +1,6 @@
-package entities.buildings.mines;
+package engine.entities.buildings.mines;
 
-import entities.buildings.Building;
+import engine.entities.buildings.Building;
 
 public abstract class Mine extends Building {
 	private boolean active;

@@ -1,7 +1,8 @@
 package engine;
 
 import java.util.ArrayList;
-import entities.Entity;
+
+import engine.entities.Entity;
 
 public class EntityManager {
 	private ArrayList<Entity> entities = new ArrayList<Entity>();

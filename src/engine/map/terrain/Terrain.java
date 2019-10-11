@@ -1,6 +1,6 @@
-package entities.terrain;
+package engine.map.terrain;
 
-import entities.Entity;
+import engine.entities.Entity;
 
 public abstract class Terrain extends Entity {
 

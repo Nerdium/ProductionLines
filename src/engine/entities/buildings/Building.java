@@ -1,6 +1,6 @@
-package entities.buildings;
+package engine.entities.buildings;
 
-import entities.Entity;
+import engine.entities.Entity;
 
 public abstract class Building extends Entity {
 	private int sizeX, sizeY;
@@ -10,6 +10,8 @@ public abstract class Building extends Entity {
 		this.sizeX = sizeX;
 		this.sizeY = sizeY;
 	}
+	
+	public abstract void build();
 	
 	public int getSizeX() {
 		return this.sizeX;
