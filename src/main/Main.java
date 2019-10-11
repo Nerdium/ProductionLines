@@ -10,6 +10,7 @@ public class Main {
 		Map map = new Map();
 		
 		map.generateMap();
+		map.placeBuilding(sq.getId(), 0, 0, sq.getSizeX(), sq.getSizeY());
 		System.out.println("Test: \"" + map.buildingAtPos(2, 2) + "\"");
 		
 	}
