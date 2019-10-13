@@ -1,5 +1,7 @@
 package engine.map;
 
+import java.util.ArrayList;
+
 import config.EntityID;
 import config.MapConfig;
 import engine.entities.buildings.Building;
@@ -36,18 +38,18 @@ public class Map {
 	}
 	//For buildings that collect resources and need to be placed on certain terrain
 	public boolean placeMine(Mine mine, int x, int y, ResourceType type) {
-		int resourcesOnMap = 0;
+		ArrayList<Deposit> deposits = new ArrayList<Deposit>();
 		for(int i = 0; i < mine.getSizeY(); i++) {
 			for(int j = 0; j < mine.getSizeX(); j++) {
 				if(terrainMap[y + i][x + j].isResource() && terrainMap[y + i][x + j].getType() == type) {
 					buildingMap[y + i][x + j] = mine.getId();
-					resourcesOnMap += ((Deposit)(terrainMap[y + i][x + j])).getResourcesLeft();
+					deposits.add((Deposit)(terrainMap[y + i][x + j]));
 				} else {
 					return false;
 				}
 			}
 		}
-		mine.setResourcesLeft(resourcesOnMap);
+		mine.setResources(deposits);
 		return true;
 	}
 	

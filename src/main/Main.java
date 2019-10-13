@@ -1,6 +1,5 @@
 package main;
 
-import engine.entities.buildings.mines.ResourceType;
 import engine.entities.buildings.mines.StoneQuarry;
 import engine.map.Map;
 

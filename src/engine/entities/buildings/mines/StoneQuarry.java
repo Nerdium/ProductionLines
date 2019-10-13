@@ -14,10 +14,5 @@ public class StoneQuarry extends Mine {
 		
 	}
 
-	@Override
-	public void build() {
-		
-		
-	}
 
 }
