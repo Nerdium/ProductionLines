@@ -11,8 +11,6 @@ public abstract class Building extends Entity {
 		this.sizeY = sizeY;
 	}
 	
-	public abstract void build();
-	
 	public int getSizeX() {
 		return this.sizeX;
 	}
